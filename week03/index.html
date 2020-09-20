@@ -1,9 +1,92 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>annlie nguyen</title>
+		<title>week 3</title>
+		<style>
+			{
+				box-sizing: border-box;
+			}
+
+			.column {
+				float: left;
+				font-family: Verdana;
+			}
+
+			.left {
+				width: 30%;
+				text-align: right;
+			}
+
+			.middle{
+				width: 40%;
+				font-size: 13px;
+			}
+
+			.right{
+				width: 30%;
+			}
+
+			.head{
+				column-span: all;
+				font-family: Verdana;
+				padding-top: 40px;
+				padding-bottom: 40px;
+				text-align: center;
+			}
+
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		</style>
 	</head>
 	<body>
-		<h3>week 3 hw</h3>
-		<p>words words words</p>
+		<div class="row">
+			<div class="head">
+				<img src="icon.png" style="margin-left: auto; margin-right: auto; width:3%">
+			</div> <!-- end header -->
+
+			<div class="column left">
+				<h2 style="font-family: times new roman; padding-right: 30px; font-size: 35px">1</h2>
+
+				<h2 style="font-family: times new roman; padding-right: 30px; font-size: 35px; padding-top: 210px">2</h2>
+			</div> <!-- end left -->
+
+			<div class="column middle">
+				<p>Vannevar Bush's <i>As We May Think</i> (1945) touches upon a proportion between time spent researching for a paper and the amount of time spent actually reading it with the latter being much smaller to not much surprise on my part. I have thought for a long time about this topic; when reading academic papers or scholarly articles, I often find myself lost about the words presented in front of me. The language is far too complex and the sentence structures far too abstract. The writing feels as though it's not meant to actually deliver any information to me, the reader. It is a mere show of how intellectually advanced the writer is and only those on the writer's mental level are allowed to take part in the exchange of knowledge. Academic writings are involved in their own world of politics. If not for this purpose, would the writing not be simpler and more easily understood? Readers are left to less accepted forms of information exchange that lower their credibility, such as Wikipedia. A threshold is created that is unpassable. If you cannot understand the complex language presented, then you cannot become any more complex.</p>
+
+				<br><br>
+
+				<p>You say the name of a brand you've been looking at lately and later find it as an instagram ad. You say a phrase unrelated to "Google home" and your device beeps alive. You watch a video on YouTube once and find your recommendations filled with similar ones. Our data is no longer our data and has not been for awhile. The Internet has opened the possibility of being watched and listened to constantly on a regular basis and has made it feel like a social norm. We are freely being exploited and used as products by big companies, all under a silent agreement made between users and the corporations. Tim Beners Lee discusses our hidden contract with companies in his piece <i>Long Live the Web</i> (2010). If we want to use the Internet or have ourselves connected online, we have no choice but to follow the rules set for us. If we don't, companies will disrupt our access to the online world. We must allow ourselves to be constantly monitored. Users end up spending their money on products to have those products shovel even more money to its creators inadvertently.</p>
+
+				<br><br>
+
+				<p style="font-size: 10px"><b>Written by</b>:</p>
+				<p><img src="https://pro2-bar.myportfolio.com/v1/assets/40f7c416-1b88-43b5-a5a9-196f5c6f7911/8d52bfeb-e2e9-44cc-b4e1-6fb0d0309cce.png?h=3f34c468499b6d35317e3aa6a5dd709e" style="width: 10%; vertical-align: middle; padding-right: 10px"> <span style="font-size: 10px"><b>annlie nguyen</b>, <a href="https://annlienguyen.com/work" style="text-decoration: none; color: #bed2d4">designer</a> and <a href="https://www.etsy.com/shop/yeuuco" style="text-decoration: none; color: #bed2d4">store owner</a></span></p>
+
+
+			</div> <!-- end middle -->
+
+			<div class="column right">
+				<details>
+					<summary style="font-size: 10px; text-align: right; padding-right: 20px"><b>Contact author</b>:</summary>
+
+					<form style="text-align: right; padding-right: 20px">
+						<label for="name" style="font-size: 10px">Name:</label>
+						<br>
+						<input type="text" id="name" name="name">
+
+						<br><br>
+
+						<label for="message" style="font-size: 10px">Message:</label>
+						<br>
+						<input type="text" id="message" name="message">
+				</form>
+				</details>
+			</div> <!-- end right -->
+
+		</div> <!-- end row -->
+		
 	</body>
 </html>
