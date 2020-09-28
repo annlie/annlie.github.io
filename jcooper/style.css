@@ -1,0 +1,50 @@
+{
+	box-sizing: border-box;
+}
+
+.column {
+	float: left;
+	font-family: Verdana;
+}
+
+.left {
+	width: 55%;
+	margin-left: 80px;
+	margin-right: 50px;
+	background-color: pink;
+	height: 670px;
+}
+
+.left img {
+  max-width: 100%;
+  height: 640px;
+  margin: auto;
+  display: block;
+}
+
+.right {
+	width: 30%;
+	margin-right: 80px;
+	background-color: yellow;
+	height: 670px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+	text-align: right;
+}
