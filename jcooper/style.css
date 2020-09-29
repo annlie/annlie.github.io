@@ -1,5 +1,6 @@
 {
 	box-sizing: border-box;
+
 }
 
 .column {
@@ -11,7 +12,7 @@
 	width: 55%;
 	margin-left: 80px;
 	margin-right: 50px;
-	background-color: pink;
+	/*background-color: pink;*/
 	height: 670px;
 }
 
@@ -23,10 +24,11 @@
 }
 
 .right {
-	width: 30%;
+	width: 18%;
 	margin-right: 80px;
-	background-color: yellow;
-	height: 670px;
+	/*background-color: yellow;*/
+	height: 525px;
+	padding: 5vw;
 }
 
 .row:after {
@@ -35,16 +37,40 @@
 	clear: both;
 }
 
+#theBack {
+	margin-left: 0px;
+}
+
+#theNext {
+	margin-left: 197px;
+}
+
 #footer {
 	position: absolute;
 	bottom: 0;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
+}
+
+
+#footer a {
+	font-size: 12px;
 }
 
 a {
 	text-decoration: none;
+	color: #bdbdd2;
 }
 
 h3 {
 	text-align: right;
+}
+
+p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+blockquote {
+	font-size: 14px;
+	text-align: justify;
 }
