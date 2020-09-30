@@ -12,7 +12,6 @@
 	width: 55%;
 	margin-left: 80px;
 	margin-right: 50px;
-	/*background-color: pink;*/
 	height: 670px;
 }
 
@@ -26,7 +25,6 @@
 .right {
 	width: 18%;
 	margin-right: 80px;
-	/*background-color: yellow;*/
 	height: 525px;
 	padding: 5vw;
 }
