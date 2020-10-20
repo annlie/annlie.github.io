@@ -55,6 +55,10 @@ a {
 	color: black;
 }
 
+a:hover {
+	color: #56484c;
+}
+
 p {
 	font-family: futura-pt, sans-serif;
 	font-weight: 400;
