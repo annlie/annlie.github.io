@@ -1,6 +1,10 @@
 @media only screen and (max-width: 600px) {
-	#first {
-		margin-right: -100px;
+	.nav #first {
+		display: none;
+	}
+
+	.nav #second {
+		margin-left: 60vw;
 	}
 }
 
