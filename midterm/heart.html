@@ -8,6 +8,30 @@
 		<link rel="icon" type="image/png" href="./favicon.png">
 
 		<style>
+			@media only screen and (max-width: 600px) {
+				.item {
+					display: flex;
+					flex-flow: column wrap;
+					justify-content: center;
+				}
+
+				.item div img {
+					max-width: 50%;
+					max-height: 50%;
+					display: block;
+				}
+
+				.title {
+					margin-top: 5vh;
+					margin-left: 2vw;
+				}
+
+				.item div {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}			
 
 			.item {
 				display: flex;
@@ -76,8 +100,8 @@
 		</div>
 
 		<div class="item">
-			<img src="./heart.png" alt="yeuu heart smile sticker">
 			<div>
+				<img src="./heart.png" alt="yeuu heart smile sticker">
 				<p><span style="font-size: 20px"><b>heart smile vinyl sticker</b></span></p>
 				<p style="line-height: .1">yeuu</p>
 				<p><b>$2 usd</b>
