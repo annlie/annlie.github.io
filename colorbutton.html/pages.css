@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-gap: 4rem;
+  grid-auto-flow: column;
+  margin: 0 0 4rem 0;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid > div {
+  height: 93vh;
+  background: red;
+  width: 85vw;
+  line-height: 90vh;
+}
+
+body {
+  margin: 15px;
+  margin-right: 100px;
+  margin-left: 100px;
+}

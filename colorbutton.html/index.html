@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" type="text/css" href="colorbutton.css">
+	    <title>color color color</title>
+
+	</head>
+
+	<body>
+		<h1>Color Boxes</h1>
+
+		<div class="slider">
+			<p style="font-size: 10px; line-height: 10px; text-align: center; padding-bottom: 5px;">▼</p>
+		</div>
+
+		<div class="container">
+			<p style="font-size: 10px; text-align: center;"> double click button to undo effect! </p>
+		    <div><button id="button1">fade</button></div>
+		    <div><button id="button2">warm</button></div>
+		    <div><button id="button3">cool</button></div>  
+		</div>
+			<!-- warm colors: pink, red, orange, yellow
+				 cool colors: green, blue, purple -->
+		<div class="grid" id="first">
+		 	<div style="background-color: lightblue" class="cool">
+		 		<p style="text-align: center;"><a href="./lightblue.html" style="text-decoration: none; color: white; line-height: 115px;">#b5d7e4</a></p>
+		 	</div>
+		 	<div style="background-color: lightpink" class="warm"></div>
+		 	<div style="background-color: rgb(237, 186, 255);" class="cool"></div>
+		 	<div style="background-color: lightgreen" class="cool"></div>
+		</div>
+
+		<div class="grid" id="second">
+		 	<div style="background-color: rgb(254,235,201);" class="warm"></div>
+			<div style="background-color: rgb(161, 191, 157);" class="cool"></div>
+		 	<div style="background-color: rgb(204, 236, 239);" class="cool"></div>
+		 	<div style="background-color: rgb(247, 166, 194);" class="warm"></div>
+		 
+		</div>
+
+		<div class="grid" id="third">
+			<div style="background-color: rgb(245, 221, 218);" class="warm"></div>
+		 	<div style="background-color: rgb(198, 174, 207);" class="cool"></div>
+		 	<div style="background-color: rgb(255, 207, 112);" class="warm"></div>
+		 	<div style="background-color: rgb(105, 211, 240);" class="cool"></div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="colorbutton.js"></script>
+
+	</body>
+
+</html>
