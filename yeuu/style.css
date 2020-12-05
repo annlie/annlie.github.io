@@ -1,0 +1,83 @@
+@media only screen and (max-width: 600px) {
+	.nav #first {
+		display: none;
+	}
+
+	.nav #second {
+		margin-left: 60vw;
+	}
+}
+
+.nav {
+	display: flex;
+	flex-flow: row;
+	text-align: center;
+	justify-content: space-between;
+	margin-top: 5vh;
+	margin-left: -16vw;
+	margin-right: -17vw;
+}
+
+.nav > * {
+	flex: 1 100%;
+}
+
+.footer {
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	text-align: center;
+	justify-content: space-between;
+/*	position: fixed;
+	bottom: 0px;*/
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}
+
+.footer > * {
+	flex: 1 100%;
+}
+
+.nav p {
+	margin: auto;
+}
+
+.footer p {
+	margin: 3px 0;
+	font-size: 13px;
+}
+
+.footer a {
+	font-size: 13px;
+}
+
+.coquette {
+	font-family: coquette, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 25px;
+}
+
+a {
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #56484c;
+}
+
+p {
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+}
+
+
+
+

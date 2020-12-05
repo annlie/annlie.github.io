@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>contact_ yeuu</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://use.typekit.net/jev3lnx.css">
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="icon" type="image/png" href="./favicon.png">
+
+			<style>
+				#contact {
+					display: flex;
+					flex-flow: row wrap;
+					text-align: center;
+					justify-content: center;
+					margin-top: 5vh;
+					box-sizing: border-box;
+				}
+
+				#contact > * {
+					flex: 1 100%;
+				}
+
+
+				form, input {
+					font-family: futura-pt, sans-serif;
+					font-weight: 400;
+					font-style: normal;
+					font-size: 15px;
+				}
+
+				input {
+					padding-top: 1vh;
+					padding-bottom: 1vh;
+					width: 40%;
+					margin-top: 1vh;
+					border: 1px solid black;
+					margin-bottom: 2vh;
+				}
+
+				#button {
+					border: none;
+					color: white;
+					background-color: black;
+					text-align: center;
+					text-decoration: none;
+					font-size: 13px;
+					padding: 5px 8px;
+					font-family: futura-pt, sans-serif;
+					font-weight: 400;
+					font-style: normal;
+					margin-top: 2vh;
+					width: 3%;
+				}
+
+				#bigBox {
+					height: 15vh;
+				}
+
+				#sent {
+					display: flex;
+					flex-flow: row nowrap;
+					text-align: center;
+					justify-content: center;
+					visibility: hidden;
+					line-height: 0px;
+					margin-bottom: -3vh;
+				}
+
+
+			</style>
+	</head>
+	<body>
+			<!-- header -->
+			<div class="nav">
+				<p id="first">
+					<a href="./home.html">shop</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="./about.html">about</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="./contact.html">contact</a>
+				</p>
+				<p id="second">
+					<a href="./cart.html">cart</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="./home.html" class="coquette">yeuu</a>
+					<!-- <p class="coquette"><a href="./home.html" class="coquette">yeuu</a></p> -->
+				</p>
+			</div>
+			<!-- end header -->
+
+			<div id="contact">
+				<form id="cForm">
+					<!-- all form items matched with an ID to check their values -->
+					name: <br> <input type="text" name="name" id="userName">
+					<br><br>
+					email: <br> <input type="text" name="email">
+					<br><br>
+					message: <br> <input id="bigBox" type="text" name="message">
+					<br><br>
+
+					<!-- call the messageSend() function when button clicked-->
+					<button id="button" type="button" onclick="messageSend()">
+						send
+					</button>
+				</form>
+			</div>
+
+			<div id="sent">
+				<p>thank you&nbsp;</p>
+				<!-- name left empty to fill in after form value retrieved-->
+				<p id="name"></p>
+				<p>&nbsp;for your message</p>
+			</div>
+
+			<!-- footer -->
+			<div class="footer">
+				<p><span style="font-size: 20px"><b>smile or frown</b></span></p>
+				<p>
+					<a href="https://www.instagram.com/yeuu.co/">instagram</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="https://www.etsy.com/shop/yeuuco">etsy</a>
+				</p>
+				<p>EMAIL: yeuuco@gmail.com</p>
+				<p>Copyright &copy; 2020 YEUU. All rights reserved.</p>
+			</div>
+			<!-- end footer -->
+
+			<script>
+				function messageSend() {
+					//fill in name after retrieving the data from the form
+					document.getElementById("name").innerHTML = document.getElementById("userName").value;
+
+					//change styling for contact form and sent message
+					document.getElementById("contact").style.display = "none";
+					document.getElementById("sent").style.visibility = "visible";
+					document.getElementById("sent").style.marginTop = "10vh";
+					document.getElementById("sent").style.marginBottom = "57vh";
+				}
+			</script>
+
+
+<!-- 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="script.js"></script> -->
+	</body>
+</html>
