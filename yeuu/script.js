@@ -1,35 +1,21 @@
-let sendMessage = document.getElementbyId("name");
+let userCart = [];
+let total = 0;
 
+//change cart preview to show the correct amount as soon as page loads
 $(document).ready(function() {
-	// $("#button").click(function() {
-	// 	// $("#contact").hide();
-	// 	// $("#cForm").css("visibility", "hidden");
+	console.log("yeeeeeep");
+	$("#cartName").html("cart (" + total + ")");
 
-	// 	$("#contact").hide();
-
-	// 	var p = document.createElement("p");
-	// 	var message = document.createTextNode("Thank you for your message.");
-	// 	p.appendChild(message);
-
-	// 	var div = document.getElementbyId("contact");
-	// 	div.appendChild(p);
-	// });
-
-	// $("#button").click(function() {
-	// 	// alert("thank you for your message");
-	// 	sendMessage.innerHTML = "annlie";
-	// });
 });
 
-//notes:
-//classes use . (multiple elements)
-//ids use # (one element)
+//add an item to cart preview by updating number
+function addCart() {
+	console.log("yes");
+	total += 1;
+	document.getElementById("cartName").innerHTML = "cart (" + total + ")";
+};
 
-// var box = $(".box");
-// box.animate({width: '40vw'}, "slow");
 
 
-$("#button").click(function() {
-		// alert("thank you for your message");
-		sendMessage.innerHTML = "annlie";
-	});
+// id - #
+// class - .
