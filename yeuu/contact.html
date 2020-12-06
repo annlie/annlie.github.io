@@ -54,7 +54,7 @@
 					width: 3%;
 				}
 
-				#bigBox {
+				#userMessage {
 					height: 15vh;
 				}
 
@@ -95,9 +95,9 @@
 					<!-- all form items matched with an ID to check their values -->
 					name: <br> <input type="text" name="name" id="userName">
 					<br><br>
-					email: <br> <input type="text" name="email">
+					email: <br> <input type="text" name="email" id="userEmail">
 					<br><br>
-					message: <br> <input id="bigBox" type="text" name="message">
+					message: <br> <input type="text" name="message" id="userMessage">
 					<br><br>
 
 					<!-- call the messageSend() function when button clicked-->
@@ -108,10 +108,8 @@
 			</div>
 
 			<div id="sent">
-				<p>thank you&nbsp;</p>
-				<!-- name left empty to fill in after form value retrieved-->
 				<p id="name"></p>
-				<p>&nbsp;for your message</p>
+				<p id="error"></p>
 			</div>
 
 			<!-- footer -->
@@ -126,19 +124,6 @@
 				<p>Copyright &copy; 2020 YEUU. All rights reserved.</p>
 			</div>
 			<!-- end footer -->
-
-			<script>
-				function messageSend() {
-					//fill in name after retrieving the data from the form
-					document.getElementById("name").innerHTML = document.getElementById("userName").value;
-
-					//change styling for contact form and sent message
-					document.getElementById("contact").style.display = "none";
-					document.getElementById("sent").style.visibility = "visible";
-					document.getElementById("sent").style.marginTop = "10vh";
-					document.getElementById("sent").style.marginBottom = "57vh";
-				}
-			</script>
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 			<script src="script.js"></script>
