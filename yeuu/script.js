@@ -35,7 +35,7 @@ function messageSend() {
 		document.getElementById("name").innerHTML = "thank you "+document.getElementById("userName").value+" for your message";
 	} else {
 		//display an error message if something wasn't filled out
-		document.getElementById("error").innerHTML = "poo error: message unable to be sent because of missing information";
+		document.getElementById("error").innerHTML = "error: message unable to be sent because of missing information";
 	}	
 
 	//change styling for contact form and message
