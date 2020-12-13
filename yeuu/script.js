@@ -1,4 +1,3 @@
-let userCart = [];
 let total = 1;
 
 //change cart preview to show the correct amount as soon as page loads
