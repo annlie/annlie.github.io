@@ -1,5 +1,5 @@
 let userCart = [];
-let total = 2;
+let total = 1;
 
 //change cart preview to show the correct amount as soon as page loads
 $(document).ready(function() {
