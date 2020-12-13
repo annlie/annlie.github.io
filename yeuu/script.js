@@ -47,16 +47,18 @@ function messageSend() {
 	if (nameCheck && emailCheck && messageCheck) {
 		//fill in name after retrieving the data from the form
 		document.getElementById("name").innerHTML = "thank you "+document.getElementById("userName").value+" for your message";
+
+		//change styling for contact form and message
+		document.getElementById("contact").style.display = "none";
+		document.getElementById("sent").style.visibility = "visible";
+		document.getElementById("sent").style.marginTop = "10vh";
+		document.getElementById("sent").style.marginBottom = "57vh";
+		document.getElementById("error").innerHTML = "";
 	} else {
 		//display an error message if something wasn't filled out
+		document.getElementById("sent").style.visibility = "visible";
 		document.getElementById("error").innerHTML = "error: message unable to be sent because of missing information";
 	}	
-
-	//change styling for contact form and message
-	document.getElementById("contact").style.display = "none";
-	document.getElementById("sent").style.visibility = "visible";
-	document.getElementById("sent").style.marginTop = "10vh";
-	document.getElementById("sent").style.marginBottom = "57vh";
 }
 
 function addItem(itemName, price) {
