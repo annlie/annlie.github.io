@@ -31,6 +31,9 @@ function removeCart() {
 	console.log("removing from cart");
 	total -= 1;
 	$("#cartName").html("cart (" + total + ")");
+
+	let itemDiv = document.getElementById("itemStart");
+	itemDiv.style.display = "none";
 }
 
 //display messages on contact page after form submitted
@@ -58,6 +61,9 @@ function messageSend() {
 }
 
 function addItem(itemName, price) {
+	//updating cart number
+	document.getElementById("cartName").innerHTML = "cart (" + total + ")";
+
 	//create new DOM elements and set their correct text values
 	let last = document.getElementById("itemStart");
 
@@ -122,6 +128,9 @@ function addItem(itemName, price) {
 
 	p1.style.fontWeight = "bold";
 	p3.style.fontSize = "12px";
+
+	//handling onclick for created button
+	button.onclick = function() { removeCart(); };
 }
 
 //	how the DOM elements would look if written in HTML:
