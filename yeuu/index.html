@@ -1,146 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>home_ yeuu</title>
+		<title>yeuu</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://use.typekit.net/jev3lnx.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="icon" type="image/png" href="./favicon.png">
-
+		
 		<style>
 			@media only screen and (max-width: 600px) {
-				.title {
-					text-align: center;
+				img {
+					display: none;
+				}
+
+				.nav p {
+					margin-top: 20vh;
 				}
 			}
 
-			.images {
+			.nav {
 				display: flex;
-				flex-flow: row;
-				justify-content: space-around;
-				padding-left: 12vw;
-				padding-right: 12vw;
-				padding-bottom: 5vw;
+				flex-flow: row wrap;
+				text-align: center;
+				justify-content: center;
 			}
 
-			.images > * {
+			.nav > * {
 				flex: 1 100%;
 			}
 
-			.images img {
-				max-width: 100%;
-				max-height: 100%;
+			.center {
+				display: flex;
+				align-items: : center;
+				justify-content: center;
 			}
 
-			figure {
-				text-align: center;
+			img {
+				max-width: 10%;
+				max-height: 10%;
+			}
+
+
+			p {
+				font-family: coquette, sans-serif;
+				font-weight: 700;
+				font-style: normal;
+				font-size: 25px;
+			} 
+
+			a {
 				font-family: futura-pt, sans-serif;
 				font-weight: 400;
 				font-style: normal;
-				font-size: 15px;
-			}
-
-			figcaption {
-				padding-top: 2vh;
-			}
-
-			.banner {
-				padding-top: 4vw;
-				padding-bottom: 4vw;
-				padding-left: 12vw;
-				padding-right: 12vw;
-			}
-
-			.banner img {
-				max-width: 100%;
-				max-height: 100%;
-			}
-
-			.title {
-				padding-left: 12vw;
-				padding-right: 12vw;
-				padding-bottom: 4vh;
+				font-size: 12px;
+				text-decoration: none;
+				padding-top: 25vh;
+				color: black;
 			}
 
 		</style>
-
 	</head>
 
 	<body>
-		<!-- header -->
-		<div class="nav">
-			<p id="first">
-				<a href="./home.html">shop</a>
-				&nbsp;&nbsp;&nbsp;
-				<a href="./about.html">about</a>
-				&nbsp;&nbsp;&nbsp;
-				<a href="./contact.html">contact</a>
-			</p>
-			<p id="second">
-				<a href="./cart.html" id="cartName">cart</a>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="./home.html" class="coquette">yeuu</a>
-				<!-- <p class="coquette"><a href="./home.html" class="coquette">yeuu</a></p> -->
-			</p>
+		<div class="center">
+			<a href="./home.html">
+				<div class="nav">
+					<p>yeuu</p>
+					<!-- <img class="w3-spin" src="./logo.png" alt="yeuu logo"></img> -->
+					<img src="./logo.png" alt="yeuu logo">
+				</div>
+			</a>
 		</div>
-		<!-- end header -->
-
-		<div class="banner">
-			<img src="./banner.png" alt="yeuu banner">
-		</div>
-
-		<div class="title">
-			<p>shop_ collection:</p>
-		</div>
-
-		<div class="images">
-			<figure>
-				<a href="./tote.html"><img src="./tote.jpg" alt="yeuu tote bag"></a>
-				<a href="./tote.html"><figcaption>embroidered tote bag &nbsp;&nbsp; $25</figcaption></a>
-			</figure>
-
-			<figure>
-				<a href="./bottle.html"><img src="./bottle.jpg" alt="yeuu bottle"></a>
-				<a href="./bottle.html"><figcaption>reusable sticker bottle &nbsp;&nbsp; $10</figcaption></a>
-			</figure>
-
-			<figure>
-				<a href="./loop.html"><img src="./loop.jpg" alt="yeuu embroidery loop"></a>
-				<a href="./loop.html"><figcaption>embroidered loop &nbsp;&nbsp; $15</figcaption></a>
-			</figure>
-		</div>
-
-		<div class="images">
-			<figure>
-				<a href="./face.html"><img src="./face.png" alt="yeuu smile sticker"></a>
-				<a href="./face.html"><figcaption>smile sticker &nbsp;&nbsp; $2</figcaption></a>
-			</figure>
-
-			<figure>
-				<a href="./heart.html"><img src="./heart.png" alt="yeuu heart sticker"></a>
-				<a href="./heart.html"><figcaption>heart smile sticker &nbsp;&nbsp; $2</figcaption></a>
-			</figure>
-
-			<figure>
-				<a href="./uuuu.html"><img src="./uuuu.png" alt="yeuu uuuu sticker"></a>
-				<a href="./uuuu.html"><figcaption>uuuu sticker &nbsp;&nbsp; $2</figcaption></a>
-			</figure>
-		</div>
-
-		<!-- footer -->
-		<div class="footer">
-			<p><span style="font-size: 20px"><b>smile or frown</b></span></p>
-			<p>
-				<a href="https://www.instagram.com/yeuu.co/">instagram</a>
-				&nbsp;&nbsp;&nbsp;
-				<a href="https://www.etsy.com/shop/yeuuco">etsy</a>
-			</p>
-			<p>EMAIL: yeuuco@gmail.com</p>
-			<p>Copyright &copy; 2020 YEUU. All rights reserved.</p>
-		</div>
-		<!-- end footer -->
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="script.js"></script>
 	</body>
 </html>
